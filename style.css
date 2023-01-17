@@ -60,11 +60,11 @@ aside {
 }
 
 .site_footer {
+    min-height: 115px;
     background-color: #e1e1e1;
     grid-area: footer;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 10vh;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     justify-items: center;
     align-items: center;
 }
@@ -72,7 +72,7 @@ aside {
 .footer__section {
     background-color: white;
     height: 80%;
-    width: 50%;
+    max-width: 50%;
     margin: 0 auto;
     display: grid;
     align-items: center;
