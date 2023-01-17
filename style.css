@@ -39,6 +39,7 @@ main h1 {
     display: grid;
     align-items: center;
     justify-items: center;
+    grid-template-columns: repeat(autofit(1fr, 2fr));
 }
 
 .content1 {
@@ -60,7 +61,7 @@ aside {
 }
 
 .site_footer {
-    min-height: 115px;
+    min-height: 20vh;
     background-color: #e1e1e1;
     grid-area: footer;
     display: grid;
