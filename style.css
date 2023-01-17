@@ -17,6 +17,7 @@
 main {
     grid-area: main;
     background-color: #fff8e4;
+    min-height: 40vh;
 }
 
 main h1 {
@@ -58,6 +59,7 @@ aside {
     grid-area: aside;
     background-color: #deedcc;
     text-align: center;
+    min-height: 30vh;
 }
 
 .site_footer {
@@ -73,9 +75,20 @@ aside {
 .footer__section {
     background-color: white;
     height: 80%;
-    max-width: 50%;
     margin: 0 auto;
     display: grid;
     align-items: center;
     justify-items: center;
 }
+
+@media screen and (max-width: 600px) {
+    .grid_container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+    @media screen and (min-width: 600px) {
+        .site_header h2 {
+            font-size: 2em;
+        }
+        }
